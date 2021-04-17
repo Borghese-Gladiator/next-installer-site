@@ -1,18 +1,13 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Sidebar from '../components/Sidebar';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Home | Installer Site</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav>
-        <Sidebar />
-      </nav>
-
       <main className={styles.main}>
         <a href="/TS_Current_Resume.pdf">Click here for your file</a>
         {/*<a href="/my-electron-app-0.1.0-Setup.exe">Click here for your EXE file</a>*/}
@@ -56,6 +51,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+
     </div>
   )
 }

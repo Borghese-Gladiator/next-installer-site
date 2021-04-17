@@ -15,7 +15,8 @@ export default function Home() {
       </nav>
 
       <main className={styles.main}>
-        <DownloadButton apiRoute={"/api/hello"} filename={"blah.txt"} />
+        <a href="/TS_Current_Resume.pdf">Click here for your file</a>
+        {/*<a href="/my-electron-app-0.1.0-Setup.exe">Click here for your EXE file</a>*/}
 
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>

@@ -3,11 +3,11 @@ import styles from '../styles/Download.module.css'
 
 export default function Download() {
   const downloadList = [
-    { filename: 'big_brain.png', text: 'Notepad++ 7.9.5 Release' },
-    { filename: 'big_brain.png', text: 'Notepad++ 7.9.5 Release' },
-    { filename: 'big_brain.png', text: 'Notepad++ 7.9.5 Release' },
-    { filename: 'big_brain.png', text: 'Notepad++ 7.9.5 Release' },
-    { filename: 'big_brain.png', text: 'Notepad++ 7.9.5 Release' },
+    { filename: 'my-electron-app-0.1.0 Setup.exe', text: '<Application_Name> 7.9.5 Release (x64)' },
+    { filename: 'my-electron-app-0.1.0 Setup.exe', text: '<Application_Name> 7.9.5 Release (x64)' },
+    { filename: 'my-electron-app-0.1.0 Setup.exe', text: '<Application_Name> 7.9.5 Release (x64)' },
+    { filename: 'my-electron-app-0.1.0 Setup.exe', text: '<Application_Name> 7.9.5 Release (x64)' },
+    { filename: 'my-electron-app-0.1.0 Setup.exe', text: '<Application_Name> 7.9.5 Release (x64)' },
   ]
   return (
     <div>
@@ -33,7 +33,19 @@ export default function Download() {
           })}
         </div>
       </main>
-
     </div>
   )
 }
+/*
+LINK AS BUTTON EXAMPLE
+
+<a href="/TS_Current_Resume.pdf" style={{
+  backgroundColor: 'red',
+  color: 'white',
+  padding: '1em 1.5em',
+  textDecoration: 'none',
+  textTransform: 'uppercase'
+}}>
+  Click here for your file</a>
+<a href="/my-electron-app-0.1.0-Setup.exe">Click here for your EXE file</a>
+*/

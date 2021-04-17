@@ -9,18 +9,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <a href="/TS_Current_Resume.pdf" style={{
-          backgroundColor: 'red',
-          color: 'white',
-          padding: '1em 1.5em',
-          textDecoration: 'none',
-          textTransform: 'uppercase'
-        }}>
-          Click here for your file</a>
-        {/*<a href="/my-electron-app-0.1.0-Setup.exe">Click here for your EXE file</a>*/}
-
         <h1 className={styles.title}>
-          Welcome to {`APP_NAME`}
+          Welcome to {`<name>`}
         </h1>
 
         <p className={styles.description}>

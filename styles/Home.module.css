@@ -25,6 +25,7 @@
 }
 
 .description {
+  align-self: flex-start;
   font-size: 1.0rem;
   margin-left: 5%;
   margin-right: 5%;

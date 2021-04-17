@@ -1,3 +1,24 @@
+# Next Installer Site
+Next.js UI to let users download EXE files created by Electron Desktop app (separate repo).
+- Next.js is a React framework (known for SSR & serverless functions through Vercel) - I did not use any here (yet), so I am hosting on Netlify
+- `/public` folder holds files available for download (which `<a href={file_name}>` lets users download)
+- `_app.js` runs to getLayout of page before displaying
+- used package `react-pro-sidebar` for Sidebar
+- created pages Home, Download, Resources, & Contact (loosely based things off of Notepad++ installation site)
+
+## Installation
+- `npm install` - installs listed packages from package.json into /node_modules/
+- `npm run dev` - runs dev command in package.json - `"next dev"` which runs Next.js's dev server
+
+## File Structure
+- Next.js standard file structure
+  - every JS file in /pages/ is one page that users can navigate to
+  - `/pages/_app.js` is ran right before loading each page
+  - /pages/api/ holds all serverless functions for frontend to hit at `api/<file_name` (uses Node.js under the hood)
+- /components/ holds components & layouts
+- /styles/ holds module.css files (React loads as scoped CSS) && globals.css (normal global CSS for all files to access)
+
+## Next.js Default README
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

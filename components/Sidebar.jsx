@@ -1,9 +1,14 @@
 import Link from 'next/link';
-
+// react-pro-sidebar components
+// code demo reference: https://github.com/azouaoui-med/react-pro-sidebar/blob/master/demo/src/Aside.js
 import { ProSidebar, SidebarHeader, SidebarContent, SidebarFooter, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 // Icons
-import { FaGem, FaHeart, FaGithub } from 'react-icons/fa';
+import { FaGithub, FaDonate } from 'react-icons/fa';
+import { IoDocumentOutline } from 'react-icons/io5';
+import { CgProfile } from 'react-icons/cg';
+import { AiOutlineHome } from 'react-icons/ai';
+import { BiHelpCircle } from 'react-icons/bi';
 
 function Sidebar() {
   return (
@@ -26,15 +31,22 @@ function Sidebar() {
         </div>
       </SidebarHeader>
       <SidebarContent>
-
         <Menu iconShape="square">
-          <MenuItem icon={<FaGem />}>
-            Dashboard
+          <MenuItem icon={<AiOutlineHome />}>
+            <Link href="/">Home</Link>
           </MenuItem>
-          <SubMenu title="Components" icon={<FaHeart />}>
-            <MenuItem>Component 1</MenuItem>
-            <MenuItem>Component 2</MenuItem>
-          </SubMenu>
+          <MenuItem icon={<BiHelpCircle />}>
+            <Link href="/download">Online Help</Link>
+          </MenuItem>
+          <MenuItem icon={<IoDocumentOutline />}>
+            <Link href="/download">Resources</Link>
+          </MenuItem>
+          <MenuItem icon={<FaDonate />}>
+            <Link href="/download">Donate</Link>
+          </MenuItem>
+          <MenuItem icon={<CgProfile />}>
+            <Link href="/download">Author</Link>
+          </MenuItem>
         </Menu>
       </SidebarContent>
 

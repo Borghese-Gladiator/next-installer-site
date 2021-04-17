@@ -5,6 +5,7 @@ Next.js UI to let users download EXE files created by Electron Desktop app (sepa
 - `_app.js` runs to getLayout of page before displaying
 - used package `react-pro-sidebar` for Sidebar
 - created pages Home, Download, Resources, & Contact (loosely based things off of Notepad++ installation site)
+- prepared for Netlify deploy (added "export" command to package.json)
 
 ## Installation
 - `npm install` - installs listed packages from package.json into /node_modules/

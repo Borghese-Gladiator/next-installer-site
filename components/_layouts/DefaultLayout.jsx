@@ -5,8 +5,9 @@ const DefaultLayout = ({ children }) => (
     <nav>
       <Sidebar />
     </nav>
-
+    <div style={{flexGrow: 1}}>
     {children}
+    </div>
   </div>
 );
 

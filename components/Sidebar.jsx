@@ -36,7 +36,7 @@ function Sidebar() {
             <Link href="/">Home</Link>
           </MenuItem>
           <MenuItem icon={<AiOutlineDownload />}>
-            <Link href="/downlaod">Download</Link>
+            <Link href="/download">Download</Link>
           </MenuItem>
           <MenuItem icon={<IoDocumentOutline />}>
             <Link href="/resources">Resources</Link>

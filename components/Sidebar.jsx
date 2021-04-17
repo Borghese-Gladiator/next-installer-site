@@ -55,7 +55,7 @@ function Sidebar() {
           }}
         >
           <a
-            href="https://github.com/azouaoui-med/react-pro-sidebar"
+            href="https://github.com/Borghese-Gladiator/next-installer-site"
             target="_blank"
             className="sidebar-btn"
             rel="noopener noreferrer"

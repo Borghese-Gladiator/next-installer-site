@@ -7,7 +7,7 @@ import 'react-pro-sidebar/dist/css/styles.css';
 import { FaGithub, FaDonate } from 'react-icons/fa';
 import { IoDocumentOutline } from 'react-icons/io5';
 import { CgProfile } from 'react-icons/cg';
-import { AiOutlineHome } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineDownload } from 'react-icons/ai';
 import { BiHelpCircle } from 'react-icons/bi';
 
 function Sidebar() {
@@ -35,17 +35,14 @@ function Sidebar() {
           <MenuItem icon={<AiOutlineHome />}>
             <Link href="/">Home</Link>
           </MenuItem>
-          <MenuItem icon={<BiHelpCircle />}>
-            <Link href="/download">Online Help</Link>
+          <MenuItem icon={<AiOutlineDownload />}>
+            <Link href="/downlaod">Download</Link>
           </MenuItem>
           <MenuItem icon={<IoDocumentOutline />}>
-            <Link href="/download">Resources</Link>
+            <Link href="/resources">Resources</Link>
           </MenuItem>
-          <MenuItem icon={<FaDonate />}>
-            <Link href="/download">Donate</Link>
-          </MenuItem>
-          <MenuItem icon={<CgProfile />}>
-            <Link href="/download">Author</Link>
+          <MenuItem icon={<BiHelpCircle />}>
+            <Link href="/contact">Contact Developers</Link>
           </MenuItem>
         </Menu>
       </SidebarContent>
